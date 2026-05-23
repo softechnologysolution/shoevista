@@ -24,25 +24,25 @@ router.get('/product/:id', getProduct);
 router.post("/product", addProduct);
 
 //Route to send products based on men,women and kid
-router.get('/category/:category', getByCategory);
+router.get('/api/category/:category', getByCategory);
 
 //Route to get top rated products
-router.get('/filter/topRated', getTopRated);
+router.get('/api/filter/topRated', getTopRated);
 
 //Route to get best sellers
-router.get('/filter/bestSellers', getBestSellers)
+router.get('/api/filter/bestSellers', getBestSellers)
 
 //Route to search for an item
-router.get('/products/search', searchProducts)
+router.get('/api/products/search', searchProducts)
 
 //Route to sort products
 // router.get('/products/:category/sortby/:criteria/:order', sortProducts)
 
 //Route to filter products
-router.get('/products/filterBy', filterProducts)
+router.get('/api/products/filterBy', filterProducts)
 
 //Route to get list of products
-router.get('/products/:list', listOfProducts)
+router.get('/api/products/:list', listOfProducts)
 
 
 export default router;
